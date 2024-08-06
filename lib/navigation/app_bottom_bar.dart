@@ -31,9 +31,9 @@ class AppBottomBar extends StatelessWidget {
     return BottomNavigationBar(
       backgroundColor: Colors.white,
       onTap: onItemTap,
-      currentIndex: currentIndex,
+      currentIndex: currentIndex, // 当前选中
       elevation: 3,
-      type: BottomNavigationBarType.fixed,
+      type: BottomNavigationBarType.fixed, // 如果底部有4个或4个以上的菜单时，需要配置这个属性
       iconSize: 22,
       selectedItemColor: Theme.of(context).primaryColor,
       selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
